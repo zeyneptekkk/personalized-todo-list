@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(side-view-smiley-woman-with-chewing-gum-copy-space.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.buyukDiv {
+  position: relative;
+  justify-content: center;
+  margin-right: 150px;
+  width: 900px;
+  height: auto;
+  padding: 20px;
+  background: transparent;
+  border: 3px solid rgb(1, 17, 19);
+  border-radius: 30px;
+  box-shadow: 15px 15px 50px rgb(239, 231, 239);
+  backdrop-filter: blur(55px);
+padding-bottom: 50px;
+}
+/* @media (max-width: 768px) {
+	.container{
+		
+        justify-content: center;  
+        align-items: center; 
+        flex-direction: column;
+		position: relative;
+		top: auto;
+		margin-right:55px;
+		width: auto;
+		height: auto;
+		
+		
+	}#resim{
+		padding-bottom: 15px; 
+		max-width: 200px;
+		position:absolute;
+		right: 3220px;;
+	}
+*/
+@media (max-width: 768px) {
+  .container {
+    display: flex; /* Flexbox düzeni eklenmeli */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    flex-direction: column; /* Dikey hizalama */
+    position: relative;
+    top: 10px;
+
+    margin-right: 40px; /* Mobil için margin ayarı */
+    width: auto;
+    height: auto;
+  }
+
+  #resim {
+    position: relative;
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #resim {
+    max-width: 200px;
+    position: relative;
+    left: 32%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #resim {
+    max-width: 200px;
+    position: relative;
+    left: 32%;
+  }
+}
+
+.input-container {
+  padding-top: 9px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.todo-input {
+  flex: 1;
+  outline: none;
+  padding: 15px 10px 10px 20px;
+  background-color: rgb(233, 242, 244);
+  border: 2px solid rgb(156, 224, 244);
+  border-radius: 24px;
+  color: black;
+  font-size: 20px;
+  margin-right: 10px;
+  font-family: "Font Name", cursive;
+  margin-top: 25px;
+}
+.todo-input::placeholder {
+  color: black;
+  font-family: "Font Name", cursive;
+}
+.add-button {
+  border: none;
+  outline: none;
+  font-family: "Font Name", cursive;
+  color: rgb(16, 1, 1);
+  font-size: 35px;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 42px;
+  height: 44px;
+  display: block;
+  margin: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
+  background-color: rgb(196, 237, 224);
+}
+.add-button:active {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.box {
+  width: 300px;
+  padding-left: 23px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 10px 0;
+  background-color: lightgray;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-family: "Font Name", cursive;
+  font-size: 20px;
+}
+.box li::marker {
+  color: rgb(189, 10, 25);
+  font-size: 20px;
+}
+.strikethrough {
+  text-decoration: line-through;
+  color: rgb(184, 9, 9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.strikethrough:hover{
+	transform: scale(1.05);
+}
+.description button {
+  text-align: center;
+  font-family: "Font Name", cursive;
+  color:black;
+  border: none;
+  border: 2px solid rgb(70, 3, 66);
+  width: 200px;
+height: 30px;
+  backdrop-filter: blur(55px);
+  padding-left: 2px;
+  border-radius: 15px;
+  background-color: rgb(191, 223, 236);
+  border: none;
+  box-shadow: 5px 5px 10px rgb(253, 150, 167);
+  cursor: pointer;
+  font-size: larger;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ margin-bottom: 12px;
+ margin-top: 12px;
+}
+.description button:active {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .description {
+    font-size: small;
+    width: 350px;
+  }
+  .description button {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 0;
+ margin-top: 0;
+  }
+  .add-button {
+    
+    position: relative;
+    width: 34px;
+    height: 40px;
+    font-size: small;
+    margin: 3px;
+    font-family: "Font Name", cursive;
+    color: black;
+    font-weight: bold;
+    margin-top: 34px;
+  }
+  .todo-input{
+    width: auto;
+    height: auto;
+  }
+}
+
+/* icerik kutular */
+.content {
+  display: none;
+  position: relative;
+  top: 5px;
+  left: 1px;
+  font-family: "Font Name", cursive;
+  /* font-weight: 400px; */
+  font-size: 30px;
+  padding: 10px;
+ 
+
+  border: 2px solid transparent;
+  border-radius: 20px;
+  color: rgb(163, 6, 6);
+  background-color: rgba(12, 90, 139, 0.961);
+ 
+}
+h2{
+	color: rgb(243, 243, 245);
+	font-weight: bolder;
+}
+/* .DivKutu {
+	
+	color: #eee;
+	margin-top: 20px;
+	background-color: #9b396c;
+	border: none;
+	border-radius: 3px;
+	margin-top: 40px;
+	position: relative;
+	top: 9px;
+	font-family: "Font Name", cursive;
+	font-size: larger;
+	padding: 10px;
+
+	margin-left: 38px;
+  }  */
+
+@media (max-width: 768px) {
+  .content {
+    width: 450px;
+    position: relative;
+    font-size: larger;
+     font-weight: bold;
+    top: 17px;
+  }.completed{
+	font-size: 14px;
+}
+}
+@media (min-width: 768px) {
+  .content {
+    width: 800px;
+    border-radius: 12px;
+    position: relative;
+    left: 16px;
+    top: 40px;
+	font-size: 20px;
+  }li{
+	font-weight: bold;
+	
+  }
+  .completed{
+	font-size: 20px;
+}
+  
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .content {
+    width: auto;
+    border-radius: 6px;
+    position: relative;
+    left:-2px;
+    top: 40px;
+  }
+}
+.timer{
+	margin-left: 17px;
+	font-weight: bold;
+}
+.completed {
+	color: green;
+	font-weight: bold;
+  
+
+  }
+
+  li {
+	padding: 10px;
+	margin: 5px;
+	background-color: #ededd9;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	
+  }
+
+  li:hover {
+	background-color: #e0e0e0;
+  }

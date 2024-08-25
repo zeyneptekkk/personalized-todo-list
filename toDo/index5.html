@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Font+Name:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="css5.css" />
+  </head>
+  <body >
+    <div class="container buyukDiv">
+      <img
+        src="freepik_br_71fbb7b3-cc43-4aba-9d78-c0178ac9d4dc.png"
+        alt=""
+        id="resim" />
+
+      <div class="input-container">
+        <input class="todo-input" id="input" placeholder="Add a new task" />
+
+        <button class="add-button" id="tiklamaButonuP" onclick="p();">P
+        </button>
+
+	   <button class="add-button" id="tiklamaButonuD" onclick="d();">D
+	  </button>
+
+	  <button class="add-button" id="tiklamaButonuE" onclick="e();">E
+	 </button>
+		
+      </div>
+
+
+	  <div class="row description">
+		<div class="col-4">
+			<button onclick="showDiv('div1')" id="p">Personaly</button>
+			
+		</div>
+		<div class="col-4">
+			<button onclick="showDiv('div2')" id="d">Daily</button>
+			
+		</div>
+		<div class="col-4" >
+			<button onclick="showDiv('div3')" id="e">Educational</button>
+			
+		</div>
+	  </div>
+	
+
+	  <div id="div1" class="content "><h2>-Personal-</h2>
+		
+		<ul>
+		
+		</ul>
+	  </div>
+	  <div id="div2" class="content"><h2>-Daily-</h2>
+		<ul>
+		
+		</ul>
+	  </div>
+	  <div id="div3" class="content "><h2>-Educational-</h2>
+		<ul>
+	
+		</ul>
+	  </div>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+    <script src="jssYeni.js"></script>
+  </body>
+</html>
